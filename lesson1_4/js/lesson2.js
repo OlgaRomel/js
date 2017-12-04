@@ -39,9 +39,11 @@ var x1=1, x2=2;
 var y1=3, y2=2;
 var z1=3, z2=5;
 console.log("треугольник\nx1 x2", x1,x2, '\ny1 y2', y1,y2, '\nz1 z2', z1,z2);
-var x = x2-x1;
-var y = y2-y1;
-var z = z2-z1;
+
+var x = (x1-y1)*(x1-y1)+(x2-y2)*(x2-y2);
+var y = (y1-z1)*(y1-z1)+(y2-z2)*(y2-z2);
+var z = (x1-z1)*(x1-z1)+(x2-z2)*(x2-z2);
+
 if (x===y+z || y===x+z || z===x+y) {
     console.log("треугольник прямоугольный");
 } else {
