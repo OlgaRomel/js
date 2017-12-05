@@ -37,7 +37,7 @@ console.log(calc(4,2,"jh"));
 console.log("2 задача");
 
 function sumNum(n) {
-    if (checkType(n)&& n>1) {
+    if (checkType(n)&& n>10) {
         var newN = (n-n%10)/10;
         return n%10 + sumNum(newN);
     }else {
