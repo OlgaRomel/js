@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Game</title>
+        <link rel = "stylesheet" href = "css/table.css">
+    </head>
+    <body>
+        <div class="game-container">
+            <div id="start_block">
+                <div class="login">
+                        <label for="login">Введите имя:</label>
+                        <input type="text" id="login">
+                </div>
+                <div class="enemy">
+                    <p>Выберите противника</p>
+                    <label>
+                        <input class="radio" type="radio" name="radio-enemy" checked>
+                        <span class="radio-custom"></span>
+                        <span class="label">против другого игрока</span>
+                    </label>
+                    <label>
+                        <input class="radio" type="radio" name="radio-enemy">
+                        <span class="radio-custom"></span>
+                        <span class="label">против компьютера</span>
+                    </label>
+                </div>
+                <div class="board-size">
+                    <p>Выберите размер поля</p>
+                    <div>
+                        <label>
+                            <input class="radio" type="radio" name="radio-size" checked>
+                            <span class="radio-custom"></span>
+                            <span class="label">3 X 3</span>
+                        </label>
+                        <label>
+                            <input class="radio" type="radio" name="radio-size">
+                            <span class="radio-custom"></span>
+                            <span class="label">5 X 5</span>
+                        </label>
+                        <label>
+                            <input class="radio" type="radio" name="radio-size">
+                            <span class="radio-custom"></span>
+                            <span class="label">9 X 9</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="game" class="start-game">
+                    <p>
+                        <span>Новая игра</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id = "field_draw"></div>
+
+        <script src="js/controller.js"></script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+/* div[id=table] {
+    border: 3px solid grey;
+} */
+
+.game-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.login,
+.enemy,
+.board-size,
+.start-game {
+    text-align: center;
+    color: #333;
+    background: rgb(165, 222, 229);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+.login {
+    margin-top: 2%;
+    padding-top: 30px;
+    height: 60px;
+}
+
+.login label {
+    font-size: 17pt;
+    padding-right: 10px;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 250px;
+}
+
+.enemy,
+.board-size {
+    height: 150px;
+}
+
+.enemy p,
+.board-size p {
+    font-size: 20pt;
+    padding-top: 40px;
+}
+
+.enemy .label {
+    font-size: 15pt;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(207, 241, 255);
+    border-radius: 3px;
+    position: relative;
+}
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.label {
+    padding-left: 5px;
+}
+
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;
+    border-radius: 2px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
+}
+
+label {
+    margin-right: 30px
+}
+
+label:last-child {
+    margin-right: 0;
+}
+
+.start-game {
+    height: 100px;
+}
+
+.start-game p {
+    font-size: 20pt;
+    padding-top: 30px;
+}
+
+.start-game span {
+    display: inline-block;
+    background: #413548;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px black;
+    color: rgb(30, 236, 226);
+    cursor: pointer;
+}
+
+#field_draw {
+    width: 450px;
+    height: 450px;
+    background: rgb(6, 140, 180);
+    display: none;
+}
+
+#block {
+    display: block;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
